@@ -1,8 +1,13 @@
-# React + Vite
+# Front-End Test Task: E-commerce Collection Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web app displays the list of products with animation. When a user click on the Load Products button only then the products will be fetched.
 
-Currently, two official plugins are available:
+### Tech Stack:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React.js, axios, framer-motion
+
+### Links:
+
+Deployment: [https://seventh-triangle-ecommerce-assignment.vercel.app/](https://seventh-triangle-ecommerce-assignment.vercel.app/)
+
+Github: [https://github.com/ShantanuWaikar10/seventh-triangle-ecommerce-assignment](https://github.com/ShantanuWaikar10/seventh-triangle-ecommerce-assignment)
