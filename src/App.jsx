@@ -26,12 +26,12 @@ function App() {
   const fetchDataFromApi = async () => {
     await axios
       .get(
-        "https://run.mocky.io/v3/92348b3d-54f7-4dc5-8688-ec7d855b6cce?mocky-delay=500ms"
+        "https://interveiw-mock-api.vercel.app/api/getProducts"
       )
       .then((response) => {
         setShowButton(false);
-        console.log(response.data);
-        setData(response.data);
+        console.log(response.data.data);
+        setData(response.data.data);
       })
       .catch((error) => {
         console.log(error);
@@ -42,7 +42,7 @@ function App() {
     fetchDataFromApi();
     setLoading(true);
   };
-
+  
   return (
     <>
       <h1 className="text-3xl ml-5 lg:ml-16 mt-5 lg:mt-10 font-semibold">
@@ -65,7 +65,7 @@ function App() {
                 src={item.product.images[0].src}
                 alt={item.product.title}
               />
-              <p className="font-sans text-lg">{item?.product?.title}</p>
+              <p className="font-sans text-lg">{item.product.title}</p>
               <h1 className="font-sans text-xl font-semibold">
                 Rs. {item.product.variants[0].price}
               </h1>
